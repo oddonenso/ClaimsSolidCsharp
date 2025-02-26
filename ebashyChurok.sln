@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35728.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ebashyChurok", "ebashyChurok\ebashyChurok.csproj", "{D2900890-41F0-423B-8FAD-5B305139AA55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service Layer", "Service Layer", "{6615C57F-FA18-4AD3-A225-B0B492539BCE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain Layer", "Domain Layer", "{39153546-865F-4F33-B5F1-6FFEE7A33DBF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Layer", "Data Layer", "{588AC88C-6697-49ED-AD90-AE62B0ABDD43}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "View Layer", "View Layer", "{44FE00AA-DAFE-4521-9DF5-848B1410A4A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{83799B38-3D31-4045-851C-AF4B3C523BEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthDomain", "AuthDomain\AuthDomain.csproj", "{8E33FC5F-A400-47F6-B10F-AB9B3C630E79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2900890-41F0-423B-8FAD-5B305139AA55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2900890-41F0-423B-8FAD-5B305139AA55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2900890-41F0-423B-8FAD-5B305139AA55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2900890-41F0-423B-8FAD-5B305139AA55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83799B38-3D31-4045-851C-AF4B3C523BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83799B38-3D31-4045-851C-AF4B3C523BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83799B38-3D31-4045-851C-AF4B3C523BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83799B38-3D31-4045-851C-AF4B3C523BEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E33FC5F-A400-47F6-B10F-AB9B3C630E79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E33FC5F-A400-47F6-B10F-AB9B3C630E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E33FC5F-A400-47F6-B10F-AB9B3C630E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E33FC5F-A400-47F6-B10F-AB9B3C630E79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D2900890-41F0-423B-8FAD-5B305139AA55} = {44FE00AA-DAFE-4521-9DF5-848B1410A4A8}
+		{83799B38-3D31-4045-851C-AF4B3C523BEA} = {6615C57F-FA18-4AD3-A225-B0B492539BCE}
+		{8E33FC5F-A400-47F6-B10F-AB9B3C630E79} = {39153546-865F-4F33-B5F1-6FFEE7A33DBF}
+	EndGlobalSection
+EndGlobal
