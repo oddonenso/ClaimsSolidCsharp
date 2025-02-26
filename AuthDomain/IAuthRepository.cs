@@ -10,6 +10,6 @@ namespace AuthDomain
     public interface IAuthRepository
     {
         User? Registration(string login, string password);   
-        User? Autification(string login, string password);
+        User? Auntification(string login, string password);
     }
 }
