@@ -19,7 +19,7 @@ namespace AuthDomain.Queries
         }
         public User? Execute(RegistrationDTO obj)
         {
-            if (obj == null || obj.Password.Equals(obj.PasswordAgain))
+            if (obj == null || !obj.Password.Equals(obj.PasswordAgain))
             {
                 return null;
             }

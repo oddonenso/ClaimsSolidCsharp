@@ -1,0 +1,11 @@
+﻿@page "/Login"
+@model ebashyChurok.Pages.Account.LoginModel
+@{
+    Layout = "_Layout";
+}
+<h1>Login</h1>
+<form asp-page="/Account/Login">
+    <input asp-for="@Model.Input.Name" />
+    <input asp-for="@Model.Input.Password" />
+    <input type="submit" value="Вход" />
+</form>

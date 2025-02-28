@@ -1,0 +1,14 @@
+﻿@page "/Account/Registration"
+@model ebashyChurok.Pages.Account.RegistrationModel
+@{
+    Layout = "_Layout";
+}
+<h2>Registration</h2>
+
+<form>asp-page"/Account/Registration"
+    <div asp-validation-summary>"All"</div>
+    <input asp-for="@Model.Input.Name"/>
+    <input asp-for="@Model.Input.Password" />
+    <input asp-for="@Model.Input.PasswordAgain" />
+    <input type="submit" value="Registration"/>
+</form>

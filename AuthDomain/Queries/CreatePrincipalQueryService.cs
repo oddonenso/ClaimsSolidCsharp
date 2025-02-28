@@ -16,8 +16,7 @@ namespace AuthDomain.Queries
             List<Claim> claims = new List<Claim>();
             foreach(var item in obj.Roles)
             {
-                Claim x = new Claim("role", item);
-                claims.Add(x);
+                claims.Add(new Claim("role", item));
             }
             var identity = new ClaimsIdentity(claims, "RolesClaim", ClaimTypes.Name, ClaimTypes.Role);
 

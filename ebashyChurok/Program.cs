@@ -22,13 +22,13 @@ builder.Services.AddAuthentication("Cookies")
                 .AddCookie("Cookies", option =>
                 {
                     option.LoginPath = "/Account/Login";
-                    option.AccessDeniedPath = "Account/AccessDeniedPath";
+                    option.AccessDeniedPath = "/Account/AccessDenied";
                 });
 builder.Services.AddAuthorization(option =>
 {
     option.AddPolicy("Autorization", police => 
     { 
-        police.RequireClaim("role", "User");
+        police.RequireClaim("role", "User", "Admin", "GoldBoy");
     });
 });
 
@@ -37,5 +37,7 @@ var app = builder.Build();
 
 app.UseRouting();
 app.UseStaticFiles();
+app.UseAuthentication();
+app.UseAuthorization();
 app.MapRazorPages();
 app.Run();

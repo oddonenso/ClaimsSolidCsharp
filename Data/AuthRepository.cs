@@ -31,7 +31,8 @@ namespace Data
             {
                 User user = new User();
                 user.login = login;
-                user.Roles = client.Roles.Select(row=>row.Name).ToList();   
+                user.Roles = client.Roles.Select(row=>row.Name).ToList();
+                return user;
             }
             return null!;
         }
